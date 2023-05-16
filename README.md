@@ -22,20 +22,21 @@ The dataset used in this project contains hourly bus usage data for ten differen
 
 The RMSE scores for the Exponential Smoothing, CNN, and LSTM models are as follows:
 
-| Municipality | Exponential Smoothing | CNN     | LSTM     |
-|--------------|----------------------|---------|----------|
-| 0            | 134.5967             | 134.5967 | 132.5328 |
-| 1            | 49.8760              | 49.8760 | 51.1178  |
-| 2            | 65.9495              | 65.9495 | 68.6517  |
-| 3            | 149.5992             | 149.5992 | 196.1672 |
-| 4            | 314.5714             | 314.5714 | 438.0063 |
-| 5            | 41.2196              | 41.2196 | 56.4466  |
-| 6            | 139.5230             | 139.5230 | 136.3428 |
-| 7            | 137.7582             | 137.7582 | 156.0054 |
-| 8            | 135.7533             | 135.7533 | 167.8005 |
-| 9            | 85.8587              | 85.8587 | 98.1688  |
+| Municipality | Exponential Smoothing | CNN    | LSTM   |
+|--------------|----------------------|--------|--------|
+| 0            | 340.977              | 134.597| 132.533|
+| 1            | 120.568              | 49.876 | 51.118 |
+| 2            | 132.936              | 65.950 | 68.652 |
+| 3            | 402.217              | 149.599| 196.167|
+| 4            | 976.265              | 314.571| 438.006|
+| 5            | 123.499              | 41.220 | 56.447 |
+| 6            | 323.853              | 139.523| 136.343|
+| 7            | 320.478              | 137.758| 156.005|
+| 8            | 333.127              | 135.753| 167.800|
+| 9            | 208.309              | 85.859 | 98.169 |
 
-From the table above, it is clear that the LSTM model tends to have higher RMSE values compared to the Exponential Smoothing and CNN models for most municipalities. This indicates that the LSTM model performs less accurately in predicting the hourly maximum electricity usage compared to the other models. However, the performance may vary depending on the specific municipality. Further analysis and evaluation metrics may be necessary to gain a comprehensive understanding of the models' performance.
+
+From the table above, we can observe the RMSE scores for each model and municipality. It is evident that the performance of the models varies across different municipalities. In general, the CNN model outperforms the Exponential Smoothing and LSTM models in terms of lower RMSE values for most municipalities. However, the LSTM model performs better than the CNN model for a few municipalities such as municipality 4 and municipality 8. It's important to note that the performance can vary depending on the specific characteristics of the data and the modeling approach.
 
 ## Dependencies
 
